@@ -1,0 +1,158 @@
+[0m10:53:04.029100 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019D03A50AA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019D06F9BD70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019D04EDD640>]}
+
+
+============================== 10:53:04.138531 | 11e10fec-9640-4bc3-ab8d-13422d22f974 ==============================
+[0m10:53:04.138531 [info ] [MainThread]: Running with dbt=1.10.13
+[0m10:53:04.139530 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True', 'version_check': 'True', 'cache_selected_only': 'False', 'target_path': 'None', 'warn_error': 'None', 'invocation_command': 'dbt init Airbnb_Project', 'log_format': 'default', 'use_colors': 'True', 'introspect': 'True', 'debug': 'False', 'printer_width': '80', 'fail_fast': 'False', 'no_print': 'None', 'quiet': 'False', 'use_experimental_parser': 'False', 'log_cache_events': 'False', 'empty': 'None', 'log_path': 'logs', 'indirect_selection': 'eager', 'write_json': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'profiles_dir': 'C:\\Users\\lavou\\.dbt'}
+[0m10:53:04.603974 [debug] [MainThread]: Starter project path: D:\Programming\DE\Airbnb with dbt and Snowflake\.venv\Lib\site-packages\dbt\include\starter_project
+[0m10:53:04.619005 [info ] [MainThread]: 
+Your new dbt project "Airbnb_Project" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m10:53:04.619972 [info ] [MainThread]: Setting up your profile.
+[0m10:55:14.069268 [error] [MainThread]: Encountered an error:
+
+[0m10:55:14.119162 [error] [MainThread]: Traceback (most recent call last):
+  File "D:\Programming\DE\Airbnb with dbt and Snowflake\.venv\Lib\site-packages\dbt\cli\requires.py", line 178, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Programming\DE\Airbnb with dbt and Snowflake\.venv\Lib\site-packages\dbt\cli\requires.py", line 128, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Programming\DE\Airbnb with dbt and Snowflake\.venv\Lib\site-packages\dbt\cli\main.py", line 483, in init
+    results = task.run()
+              ^^^^^^^^^^
+  File "D:\Programming\DE\Airbnb with dbt and Snowflake\.venv\Lib\site-packages\dbt\task\init.py", line 346, in run
+    self.setup_profile(profile_name)
+  File "D:\Programming\DE\Airbnb with dbt and Snowflake\.venv\Lib\site-packages\dbt\task\init.py", line 262, in setup_profile
+    self.create_profile_from_target(adapter, profile_name=profile_name)
+  File "D:\Programming\DE\Airbnb with dbt and Snowflake\.venv\Lib\site-packages\dbt\task\init.py", line 179, in create_profile_from_target
+    self.create_profile_from_profile_template(profile_template, profile_name)
+  File "D:\Programming\DE\Airbnb with dbt and Snowflake\.venv\Lib\site-packages\dbt\task\init.py", line 163, in create_profile_from_profile_template
+    target = self.generate_target_from_input(prompts, initial_target)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Programming\DE\Airbnb with dbt and Snowflake\.venv\Lib\site-packages\dbt\task\init.py", line 129, in generate_target_from_input
+    target[key] = click.prompt(
+                  ^^^^^^^^^^^^^
+  File "D:\Programming\DE\Airbnb with dbt and Snowflake\.venv\Lib\site-packages\click\termui.py", line 168, in prompt
+    value = prompt_func(prompt)
+            ^^^^^^^^^^^^^^^^^^^
+  File "D:\Programming\DE\Airbnb with dbt and Snowflake\.venv\Lib\site-packages\click\termui.py", line 151, in prompt_func
+    raise Abort() from None
+click.exceptions.Abort
+
+[0m10:55:14.121169 [debug] [MainThread]: Command `dbt init` failed at 10:55:14.121169 after 130.50 seconds
+[0m10:55:14.122169 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019D07535AF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019D09BF17F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019D099B8EC0>]}
+[0m10:55:14.122169 [debug] [MainThread]: Flushing usage events
+[0m10:55:16.368809 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:02:47.064743 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028B45AB0080>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028B48507620>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028B482A7DD0>]}
+
+
+============================== 11:02:47.085656 | cdac163e-8e40-4a72-baf2-3d48272e3302 ==============================
+[0m11:02:47.085656 [info ] [MainThread]: Running with dbt=1.10.13
+[0m11:02:47.085656 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'write_json': 'True', 'send_anonymous_usage_stats': 'True', 'version_check': 'True', 'cache_selected_only': 'False', 'target_path': 'None', 'warn_error': 'None', 'invocation_command': 'dbt init Airbnb_Project', 'log_format': 'default', 'use_colors': 'True', 'introspect': 'True', 'debug': 'False', 'log_cache_events': 'False', 'fail_fast': 'False', 'no_print': 'None', 'empty': 'None', 'quiet': 'False', 'printer_width': '80', 'use_experimental_parser': 'False', 'log_path': 'logs', 'indirect_selection': 'eager', 'profiles_dir': 'C:\\Users\\lavou\\.dbt', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True'}
+[0m11:02:47.220337 [info ] [MainThread]: A project called Airbnb_Project already exists here.
+[0m11:02:47.221375 [debug] [MainThread]: Command `dbt init` succeeded at 11:02:47.221375 after 0.53 seconds
+[0m11:02:47.222372 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028B48C974A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028B459989B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028B48AB1AC0>]}
+[0m11:02:47.222372 [debug] [MainThread]: Flushing usage events
+[0m11:02:49.346198 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:03:09.371040 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002429B62F3B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002429B62EF60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002429B62D7F0>]}
+
+
+============================== 11:03:09.375037 | 31162a30-bf85-4d68-b3da-c33f01622fc9 ==============================
+[0m11:03:09.375037 [info ] [MainThread]: Running with dbt=1.10.13
+[0m11:03:09.376041 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'profiles_dir': 'C:\\Users\\lavou\\.dbt', 'send_anonymous_usage_stats': 'True', 'use_colors': 'True', 'cache_selected_only': 'False', 'target_path': 'None', 'version_check': 'True', 'invocation_command': 'dbt init Airbnb_Project', 'log_format': 'default', 'warn_error': 'None', 'introspect': 'True', 'debug': 'False', 'log_cache_events': 'False', 'fail_fast': 'False', 'no_print': 'None', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'printer_width': '80', 'log_path': 'logs', 'indirect_selection': 'eager', 'write_json': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])'}
+[0m11:03:09.396010 [debug] [MainThread]: Starter project path: D:\Programming\DE\Airbnb with dbt and Snowflake\.venv\Lib\site-packages\dbt\include\starter_project
+[0m11:03:09.690865 [info ] [MainThread]: 
+Your new dbt project "Airbnb_Project" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m11:03:09.691863 [info ] [MainThread]: Setting up your profile.
+[0m11:05:38.125933 [error] [MainThread]: Encountered an error:
+
+[0m11:05:38.129933 [error] [MainThread]: Traceback (most recent call last):
+  File "D:\Programming\DE\Airbnb with dbt and Snowflake\.venv\Lib\site-packages\dbt\cli\requires.py", line 178, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Programming\DE\Airbnb with dbt and Snowflake\.venv\Lib\site-packages\dbt\cli\requires.py", line 128, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Programming\DE\Airbnb with dbt and Snowflake\.venv\Lib\site-packages\dbt\cli\main.py", line 483, in init
+    results = task.run()
+              ^^^^^^^^^^
+  File "D:\Programming\DE\Airbnb with dbt and Snowflake\.venv\Lib\site-packages\dbt\task\init.py", line 346, in run
+    self.setup_profile(profile_name)
+  File "D:\Programming\DE\Airbnb with dbt and Snowflake\.venv\Lib\site-packages\dbt\task\init.py", line 262, in setup_profile
+    self.create_profile_from_target(adapter, profile_name=profile_name)
+  File "D:\Programming\DE\Airbnb with dbt and Snowflake\.venv\Lib\site-packages\dbt\task\init.py", line 179, in create_profile_from_target
+    self.create_profile_from_profile_template(profile_template, profile_name)
+  File "D:\Programming\DE\Airbnb with dbt and Snowflake\.venv\Lib\site-packages\dbt\task\init.py", line 163, in create_profile_from_profile_template
+    target = self.generate_target_from_input(prompts, initial_target)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Programming\DE\Airbnb with dbt and Snowflake\.venv\Lib\site-packages\dbt\task\init.py", line 113, in generate_target_from_input
+    numeric_choice = click.prompt(prompt_msg, type=click.INT)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Programming\DE\Airbnb with dbt and Snowflake\.venv\Lib\site-packages\click\termui.py", line 168, in prompt
+    value = prompt_func(prompt)
+            ^^^^^^^^^^^^^^^^^^^
+  File "D:\Programming\DE\Airbnb with dbt and Snowflake\.venv\Lib\site-packages\click\termui.py", line 151, in prompt_func
+    raise Abort() from None
+click.exceptions.Abort
+
+[0m11:05:38.130952 [debug] [MainThread]: Command `dbt init` failed at 11:05:38.130952 after 148.95 seconds
+[0m11:05:38.131973 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002429B62D7F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002429DAE9730>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002429DD18590>]}
+[0m11:05:38.132932 [debug] [MainThread]: Flushing usage events
+[0m11:05:40.128275 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:15:55.574776 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023A01AD0AA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023A0583EF30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023A05774F20>]}
+
+
+============================== 11:15:55.579776 | 1ee7010b-a3a9-4485-b77f-7365f3c46c2d ==============================
+[0m11:15:55.579776 [info ] [MainThread]: Running with dbt=1.10.13
+[0m11:15:55.579776 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'send_anonymous_usage_stats': 'True', 'version_check': 'True', 'cache_selected_only': 'False', 'target_path': 'None', 'warn_error': 'None', 'invocation_command': 'dbt init Airbnb_Project', 'log_format': 'default', 'use_colors': 'True', 'introspect': 'True', 'debug': 'False', 'log_cache_events': 'False', 'fail_fast': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'printer_width': '80', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'logs', 'profiles_dir': 'C:\\Users\\lavou\\.dbt', 'static_parser': 'True', 'write_json': 'True'}
+[0m11:15:55.599812 [debug] [MainThread]: Starter project path: D:\Programming\DE\Airbnb with dbt and Snowflake\.venv\Lib\site-packages\dbt\include\starter_project
+[0m11:15:55.653749 [info ] [MainThread]: 
+Your new dbt project "Airbnb_Project" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m11:15:55.654750 [info ] [MainThread]: Setting up your profile.
+[0m11:19:37.653953 [info ] [MainThread]: Profile Airbnb_Project written to C:\Users\lavou\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m11:19:37.654952 [debug] [MainThread]: Command `dbt init` succeeded at 11:19:37.654952 after 222.36 seconds
+[0m11:19:37.655953 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023A07B41BE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023A05E117C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023A01AD0AA0>]}
+[0m11:19:37.656459 [debug] [MainThread]: Flushing usage events
+[0m11:19:39.787049 [debug] [MainThread]: An error was encountered while trying to flush usage events

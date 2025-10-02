@@ -34,3 +34,6 @@ models:
 
     dim:
       +materialized: table
+
+    source:
+      +materialized: ephemeral

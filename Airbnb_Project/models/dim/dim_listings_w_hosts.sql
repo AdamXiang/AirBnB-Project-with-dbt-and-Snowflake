@@ -18,7 +18,7 @@ SELECT
   l.price,
   l.host_id,
   h.host_name,
-  h.is_superhost AS 'host_is_superhost',
+  h.is_superhost AS host_is_superhost,
   l.created_at,
   GREATEST(l.updated_at, h.updated_at) AS updated_at
 FROM
